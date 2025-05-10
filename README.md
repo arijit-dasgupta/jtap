@@ -1,4 +1,4 @@
-# Academic Project Page Template
+# JTAP: Seeing through Occlusion
 This repository contains the website code for our paper: **Seeing through Occlusion: Uncertainty-aware Joint Physical Tracking and Prediction**.
 
 ## Acknowledgments
