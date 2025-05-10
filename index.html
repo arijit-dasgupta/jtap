@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
+  <meta name="description" content="JTAP: Seeing through Occlusion: Uncertainty-aware Joint Physical Tracking and Prediction">
+  <meta property="og:title" content="JTAP: Seeing through Occlusion"/>
+  <meta property="og:description" content="A computational model that integrates perception with physical reasoning to track and predict occluded objects"/>
+  <meta property="og:url" content="https://jtap-model.github.io/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
+  <meta property="og:image" content="static/images/Marquee_Figure_JTAP.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="JTAP: Seeing through Occlusion">
+  <meta name="twitter:description" content="A computational model that integrates perception with physical reasoning to track and predict occluded objects">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
+  <meta name="twitter:image" content="static/images/Marquee_Figure_JTAP.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="physical reasoning, occlusion, probabilistic inference, cognitive modeling, object tracking, prediction, uncertainty">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <title>JTAP: Seeing through Occlusion</title>
+  <link rel="icon" type="image/x-icon" href="static/images/jtap_icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Noto+Sans:400,700|Castoro:400,700" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,37 +38,107 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  
+  <style>
+    .publication-title {
+      font-weight: 700;
+      color: #363636;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .hero.teaser {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+    .button.is-dark {
+      background-color: #2c3e50;
+      transition: all 0.3s ease;
+    }
+    .button.is-dark:hover {
+      background-color: #34495e;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .section.hero.is-light {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+    }
+    .title.is-3 {
+      position: relative;
+      padding-bottom: 10px;
+      display: block;
+      text-align: center;
+    }
+    .title.is-3::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 32.5%;
+      width: 35%;
+      height: 2px;
+      background-color: #3273dc;
+      border-radius: 3px;
+    }
+    .carousel {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .footer {
+      background-color: #2c3e50;
+      color: #f5f5f5;
+    }
+    .footer a {
+      color: #3498db;
+    }
+    .footer a:hover {
+      color: #2980b9;
+    }
+    .author-block a {
+      color: #3273dc;
+      transition: color 0.2s ease;
+    }
+    .author-block a:hover {
+      color: #205cbc;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-
 
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Seeing through Occlusion: Uncertainty-aware Joint Physical Tracking and Prediction</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://github.com/arijit-dasgupta" target="_blank">Arijit Dasgupta</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=pQZ3WjEAAAAJ&hl=en" target="_blank">Andrew D. Bolton</a><sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="http://probcomp.csail.mit.edu/principal-investigator/" target="_blank">Vikash K. Mansinghka</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://cocosci.mit.edu/josh" target="_blank">Joshua B. Tenenbaum</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.mit.edu/~k2smith/" target="_blank">Kevin A. Smith</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Massachusetts Institute of Technology<br><sup>2</sup>CHI FRO</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="static/pdfs/Seeing_through_Occlusion_JTAP.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -83,7 +148,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,10 +156,10 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -102,16 +167,16 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="#" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv (coming soon)</span>
                 </a>
               </span>
             </div>
@@ -122,18 +187,15 @@
   </div>
 </section>
 
-
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <div style="text-align: center;">
+        <img src="static/images/Marquee_Figure_JTAP.png" alt="Marquee Figure" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      </div>
+      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem; line-height: 1.6; font-weight: 400;">
+        Participants continuously anticipated whether a moving <span style="color: blue; font-weight: 700;">blue ball</span> would hit <span style="color: #e74c3c; font-weight: 600;">Red</span> or <span style="color: #27ae60; font-weight: 600;">Green</span> first in a 2.5D environment with <span style="color: #7f8c8d; font-weight: 700;">gray</span> occluders and <span style="font-weight: 700;">black</span> barriers. Our model <span style="font-weight: 700; color: #3498db;">JTAP</span> integrates perception with physical reasoning through probabilistic inference, generating belief states with positional estimates (black dots), speed and direction estimates, and predictive trajectories (yellow lines) that capture the uncertainty in human judgments during occlusion <span style="font-weight: 700; text-decoration: underline;">despite the absence of changing visual evidence</span>.
       </h2>
     </div>
   </div>
@@ -146,9 +208,9 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+        <div class="content has-text-justified" style="background-color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+          <p style="line-height: 1.7; font-size: 1.05rem;">
+            Humans can track objects and predict their motion even when they are temporarily occluded. How does the absence of changing visual evidence alter predictive beliefs about a moving object? In our study, participants were tasked with continuously anticipating the destination of a simulated ball in occluded and un-occluded 2.5D environments. Our findings reveal that humans actively update their judgments throughout the period of occlusion while making predictions grounded in physical realism, even as occlusion impairs accuracy. To model this behavior, we integrate perception with physical reasoning, unifying tracking and prediction. This is implemented via a massively parallel probabilistic inference algorithm for approximate Bayesian inference, with a structured physical and observation model embodied in a sequential probabilistic program. This model predicts time-varying human judgments more accurately than alternative models, suggesting that humans integrate perception and physics to reason about occluded motion.
           </p>
         </div>
       </div>
@@ -157,145 +219,134 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- <div style="margin: 30px;"></div> -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3 has-text-centered">Modeling and Inference</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <div style="text-align: center;">
+          <img src="static/images/sequential_probabilistic_program.png" alt="The probabilistic generative process in JTAP" style="width: 80%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+        <div style="margin-top: 15px;"></div>
+        <h2 class="subtitle has-text-centered" style="background-color: #f8f9fa; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          The probabilistic generative process in <span style="font-weight: 700; color: #2980b9;">JTAP</span>, where states dynamically evolve over
+          time, and observations are conditionally generated from the state. Predictions at each time-step
+          evolves from current state 𝑘 time-steps ahead.        
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
+        <div style="text-align: center;">
+          <img src="static/images/parallel_compute_smc.png" alt="Parallel compute graph of massively parallel Sequential Monte Carlo (SMC) inference in JTAP" style="width: 80%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+        <div style="margin-top: 15px;"></div>
+        <h2 class="subtitle has-text-centered" style="background-color: #f8f9fa; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          Parallel compute graph of massively parallel Sequential Monte Carlo (SMC) inference in <span style="font-weight: 700; color: #2980b9;">JTAP</span>. Future 𝑘 time-steps evolve from current inferred physical state. Implemented in <a href="https://github.com/genjax-dev/genjax" target="_blank" style="color: #3498db; text-decoration: underline;">GenJAX</a>, a probabilistic programming framework in JAX.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- Occlusion GIFs section -->
+<section class="hero is-small" style="background-color: #f8f9fa; margin: 2rem 0; padding: 2rem 0; border-radius: 8px;">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <h2 class="title is-3 has-text-centered">Uncertainty in Occlusion</h2>
+      <div class="columns is-centered">
+        <div class="column">
+          <h3 class="title is-4 has-text-centered" style="color: #2c3e50;">With Occlusion</h3>
+          <div style="text-align: center;">
+            <img src="static/images/with_occlusion.gif" alt="Ball tracking with occlusion" style="width: 90%; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+        <div class="column">
+          <h3 class="title is-4 has-text-centered" style="color: #2c3e50;">Without Occlusion</h3>
+          <div style="text-align: center;">
+            <img src="static/images/without_occlusion.gif" alt="Ball tracking without occlusion" style="width: 90%; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
           </div>
         </div>
       </div>
+      <div style="margin-top: 25px;"></div>
+      <h2 class="subtitle has-text-centered" style="background-color: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); line-height: 1.7;">
+        <span style="font-weight: 600;"><span style="color: #2980b9; font-weight: 700;">JTAP</span> demonstrates how uncertainty in mental representations evolves differently when tracking visible versus occluded objects.</span> 
+        <span style="color: #555;">During occlusion, uncertainty about the object's physical state grows over time, leading to increased prediction uncertainty 
+        (visualized by the changing proportions of <span style="color: #e74c3c; font-weight: 600;">red</span> and <span style="color: #27ae60; font-weight: 600;">green</span> beliefs).</span> 
+        <span style="font-weight: 500;">In contrast, continuously visible objects maintain <span style="color: #3498db; font-weight: 600;">lower 
+        uncertainty levels</span>.</span> <span>When an occluded object reappears, uncertainty immediately resolves before becoming hidden again.</span>
+      </h2>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Occlusion GIFs section -->
 
-
-<!-- Video carousel -->
+<!-- Cognitive Comparisons section -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+      <h2 class="title is-3 has-text-centered">Cognitive Comparisons</h2>
+      <div id="cognitive-carousel" class="carousel results-carousel">
+        <div class="item">
+          <div style="text-align: center;">
+            <img src="static/images/alt_hypotheses.png" alt="Alternative hypotheses" style="width: 50%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
+          </div>
+          <div style="margin-top: 20px;"></div>
+          <h2 class="subtitle has-text-centered" style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); line-height: 1.6;">
+            Alternative hypotheses for joint tracking and prediction. The <span style="font-weight: 700; color: #7f8c8d;">Frozen</span> hypothesis keeps the same static beliefs during occlusion, while the <span style="font-weight: 700; color: #7f8c8d;">Decaying</span> hypothesis decays beliefs over time in that same period.
+          </h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+        <div class="item">
+          <div style="text-align: center;">
+            <img src="static/images/illustrative_examples.png" alt="Illustrative examples" style="width: 80%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
+          </div>
+          <div style="margin-top: 20px;"></div>
+          <h2 class="subtitle has-text-centered" style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); line-height: 1.6;">
+            Examples showing how <span style="font-weight: 700; color: #2980b9;">JTAP</span> compares to alternative models and humans. <span style="font-weight: 700; text-decoration: underline;">The absence of changing visual evidence is evidence</span> itself - as shown in Trial D, where humans gradually predict the red outcome when the ball fails to appear on the left side where it would have hit green. <span style="font-weight: 700; color: #2980b9;">JTAP</span> captures this reasoning pattern while alternative models cannot, as they don't update beliefs during occlusion.
+          </h2>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
+<!-- End Cognitive Comparisons section -->
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<section class="section" id="BibTeX" style="background-color: #f8f9fa; border-radius: 8px; margin: 2rem 0;">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre style="background-color: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);"><code>Coming Soon</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
+<!-- Acknowledgements section -->
+<section class="section" id="acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">Acknowledgements</h2>
+    <p style="background-color: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; line-height: 1.7;">
+      This work was supported in part by <a href="https://cocosys.ece.gatech.edu/" target="_blank" style="color: #3498db; font-weight: 600;">CoCoSys</a>, one of seven centers in JUMP 2.0, a Semiconductor Research Corporation (SRC) program sponsored by DARPA, and by NSF grant 2121009.
+    </p>
+  </div>
+</section>
+<!-- End Acknowledgements section -->
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
-
+        <div class="content" style="text-align: center;">
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
@@ -306,7 +357,7 @@
   
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+<!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
