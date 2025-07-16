@@ -1,0 +1,47 @@
+# Jekyll and static site build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VSCode and editor folders
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# Compiled source #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary files
+*.swp
+*.swo
+*~
+# Backup files
+*.bak
+
+
+# Ignore by convention
+*.log
+
+# Ignore static/pdfs if you don't want to track PDFs (uncomment if needed)
+# static/pdfs/
